@@ -1,0 +1,14 @@
+void main() {
+  User userOne = User();
+  print(userOne.age);
+  userOne.login();
+}
+
+class User {
+  String userName = 'MARIA';
+  int age = 25;
+  
+  void login() {
+    print('user logged in');
+  }
+}//This gives an output 25 User Logged In //
