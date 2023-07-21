@@ -1,0 +1,17 @@
+void main() {
+  User userOne = User();
+  print(userOne.age);
+  print(userOne.login());
+}
+
+class User {
+  String userName = 'MARIA';
+  int age = 25;
+  
+  login() {
+    print('user logged in');
+  }
+}
+// This will generate output as 25 
+//                             user logged in 
+//                             Null
