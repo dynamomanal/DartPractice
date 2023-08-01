@@ -19,3 +19,28 @@ void main() => runApp(MyClass());
         );
       }
     }
+//SECOND_FILE.DART
+import 'dart:math';
+import 'package:flutter/physics.dart';
+import 'package:flutter/material.dart';
+class SecondClass extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+        color: Colors.lime[100],
+        child: Center(
+            child: Text(
+              'A random number between 0 and 20 is ${generateNumbers()}', textDirection: TextDirection.ltr,)
+        )
+    );
+  } //We are going to make a method/Function which generates Numbers, this function will return int type
+ int generateNumbers(){
+    var r= Random();
+    int i=r.nextInt(20);
+    return i;
+
+ }
+
+}
+
+
