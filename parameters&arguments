@@ -1,0 +1,29 @@
+void main(){
+  void add(a,b){
+    print( a + b);
+    // a & b are positional parameters
+  } 
+  add(4,6);
+  void add1({c,d}){
+    print(c + d);
+  }//c,d are named parameters because of the curly braces
+  add1(d: 10,c: 10);
+  /* one very important difference between positional and named arguments: By default, positional parameters are required and must not be omitted - on the other hand, named arguments are optional and can be omitted.
+   */
+  // calling add1() incase of named parameters
+ //dd1(c:2);
+  //POsitional ARGUMENTS CAN BER MADE OPTIONAL 
+  
+void add2(e, [f=4]){ //f is optional , and 5 used as a default value
+  print(e + f);
+  
+}
+  add2(3);//f is still 4 because it's not overwritten
+  add2(3,8);//here , f would be 8 
+  /*Default values can also be assigned to named parameters - which are optional by default:*/
+ //We can use required keyword to make named parameters required
+void add3({required g,required h }){
+  print(g + h); 
+}  
+add3(g: 7,h: 4);
+}
