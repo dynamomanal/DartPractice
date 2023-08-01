@@ -1,0 +1,21 @@
+import 'package:example/second_file.dart';
+import 'package:flutter/material.dart';
+//like in other programming languages we import libraries same as we import packages here//
+void main() => runApp(MyClass());
+
+    class MyClass extends StatelessWidget {
+      @override
+      Widget build(BuildContext context) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: "My Flutter App",
+          //The Title that we give in a material app shows in the background of a screen
+          home: Scaffold(
+            appBar: AppBar(
+              title: Text('Title'),
+            ),
+           body:SecondClass()
+          ),
+        );
+      }
+    }
